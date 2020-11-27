@@ -16,6 +16,7 @@ nav {
 .logo strong{
     color: #FF9F40;
     margin-left: 10px;
+    cursor: default;
 }
 nav .logo{
     float: left;

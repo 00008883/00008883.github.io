@@ -48,6 +48,7 @@ body {
     display: flex;
     align-items: center;
     color:  #fff;
+    cursor: default;
 }
 
 .container {
@@ -93,7 +94,7 @@ body {
     margin-bottom: 0;
 }
 
-.header-content span {
+.header-content strong {
     color: #FF9F40;
 }
 
@@ -120,7 +121,7 @@ section {
     color: #fff;
 }
 
-@media(max-width: 960px) {
+@media(max-width: 768px) {
     .container{
         padding-right: 3rem;
         padding-left: 3rem;
@@ -128,4 +129,10 @@ section {
     .fullscreen-video-wrap {
         display: none;
     }   
+    .header-overlay{
+        display: none;
+    }
+    .header{
+        background-color: #000;
+    }
 }
