@@ -217,9 +217,10 @@ section {
         display: none;
     }
     .header-overlay{
+        display: none;
     }
     .header{
-        background: url(".././images/mobile.jpg")
+        background: #000;
     }
     .section1 {
         background-image: none;
