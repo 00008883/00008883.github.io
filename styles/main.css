@@ -263,6 +263,15 @@ section {
     .box h1{
         margin: 27px;
     }
+    .product-heading{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: rgb(10, 0, 36);
+        color: #fff;
+        padding-top: 120px;
+        padding-bottom: 0px;
+    }
 
 }
 
