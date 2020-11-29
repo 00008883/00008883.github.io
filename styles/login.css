@@ -1,0 +1,206 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Amiko', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    overflow-x: hidden;
+}
+
+
+/* Loader */
+.loader{
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader > img {
+    width: 200px;
+}
+
+.loader.hidden {
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut{
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+.imgBx img{
+    width: 400px;
+    height: 500px;
+}
+
+section{
+    position: relative;
+    min-height: 100vh;
+    background: rgb(65, 59, 114);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-top: 90px;
+}
+section .container{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+section .container .user{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+section .container .user .imgBx{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: #000;
+    transition: 0.5s;     
+}
+section .container .user .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section .container .user .formBx{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    transition: 0.5s;
+}
+section .container .user .formBx form h2{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #555;
+}
+section .container .user .formBx form input{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background: #f5f5f5;
+    color: #333;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    margin: 8px 0;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 300;
+}
+section .container .user .formBx form input[type="submit"]{
+    max-width: 100px;
+    background: #f9a826;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+section .container .user .formBx form .signup{
+    position: relative;
+    font-size: 12px;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+section .container .user .formBx form .signup a{
+    font-weight: 600;
+    color: rgb(58, 94, 255);
+    text-decoration: none;
+}
+section .container .signupBx{
+    pointer-events: none;
+}
+section .container.active .signupBx{
+    pointer-events: initial;
+}
+section .container .signupBx .formBx{
+    left: 100%;
+}
+section .container.active .signupBx .formBx{
+    left: 0;
+}
+section .container .signupBx .imgBx{
+    left: -100%;
+}
+section .container.active .signupBx .imgBx{
+    left: 0;
+}
+
+section .container .signInBx .formBx{
+    left: 0;
+}
+section .container.active .signInBx .formBx{
+    left: 100%;
+}
+section .container .signInBx .imgBx{
+    left: 0;
+}
+section .container.active .signInBx .imgBx{
+    left: -100%;
+}
+
+/* Mobile version */
+@media (max-width: 991px){
+        section .container{
+            max-width: 400px;
+        }
+        section .container .imgBx{
+            display: none;
+        }
+        section .container .user .formBx{
+            width: 100%;
+        }
+}
+
+@media (max-width: 450px){
+    section .container{
+        max-width: 80vw;
+    }
+    section .container .imgBx{
+        display: none;
+    }
+    section .container .user .formBx{
+        width: 100%;
+    }
+}

@@ -6,7 +6,7 @@
     <title>AGT | Our Products</title>
     <link href="https://fonts.googleapis.com/css2?family=Amiko:wght@600&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='styles/navbar.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='styles/products.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/login.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='styles/footer.css'>
 </head>
 <body>
@@ -40,22 +40,34 @@
 
 
     <!-- Main section -->
-    <div class="product-heading"><h1>Our Products</h1></div>
-    <section class="section2">
-        <div class="box">
-            <div class="productimage1"><img src="images/product1.jpg" alt=""></div>
-            <h1>Gaming Set A</h1>
-            <a href="product1.html" class="btn">Details</a>
-        </div>
-        <div class="box">
-            <div class="productimage1"><img src="images/product2.jpg" alt=""></div>
-            <h1>Gaming Set AA</h1>
-            <a href="product1.html" class="btn">Details</a>
-        </div>
-        <div class="box">
-            <div class="productimage1"><img src="images/product3.jpg" alt=""></div>
-            <h1>Gaming Set AAA</h1>
-            <a href="product1.html" class="btn">Details</a>
+    <section>
+        <div class="container">
+            <div class="user signInBx">
+                <div class="imgBx"><img src="images/form2.png" alt=""></div>
+                <div class="formBx">
+                    <form>
+                        <h2>Sign In</h2>
+                        <input type="text" name="" placeholder="Username">
+                        <input type="password" name="" placeholder="Password">
+                        <input type="submit" name="" value="Login">
+                        <p class="signup">Don't have an account? <a href="#"  onclick="toggleForm();">Sign Up</a></p>
+                    </form>
+                </div>
+            </div>
+            <div class="user signupBx">
+                <div class="formBx">
+                    <form>
+                        <h2>Registration</h2>
+                        <input type="text" name="" placeholder="Username">
+                        <input type="email" name="" placeholder="Your email">
+                        <input type="password" name="" placeholder="New Password">
+                        <input type="password" name="" placeholder="Confirm Password">
+                        <input type="submit" name="" value="Sign Up">
+                        <p class="signup">Already have an account? <a href="#" onclick="toggleForm();">Sign In</a></p>
+                    </form>
+                </div>
+                <div class="imgBx"><img src="images/form1.png" alt=""></div>
+            </div>
         </div>
     </section>
 
@@ -98,6 +110,7 @@
     </footer>
 
     <script src="scripts/loader.js"></script>
+    <script src="scripts/login.js"></script>
 </body>
 </html>
 
