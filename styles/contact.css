@@ -51,7 +51,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: rgba(24, 6, 104, 0.938)
+    background: linear-gradient(135deg, rgba(5,0,104,1) 35%, rgba(0,255,226,1) 100%);
 }
 .contact .content{
     min-width: 800px;
@@ -147,14 +147,6 @@ body {
 
 
 
-.contactForm .inputBox input:focus ~ span,
-.contactForm .inputBox input:valid ~ span,
-.contactForm .inputBox textarea:focus ~ span,
-.contactForm .inputBox textarea:valid ~ span{
-    color: hsl(261, 82%, 52%);
-    font-size: 12px;
-    transform: translateY(-30px);
-}
 
 .contactForm .inputBox input[type="submit"]{
     width: 100px;

@@ -38,7 +38,6 @@
         </label>
     </nav>
 
-
     <!-- Main section -->
     <section class="contact">
         <div class="content">
@@ -68,20 +67,21 @@
                     </div>
                 </div>
             </div>
+            <div id="error"></div>
             <div class="contactForm">
-                <form>
+                <form id="userForm" action="#"  onsubmit="return Validation()">
                     <h2>Contact Us</h2>
                     <div class="inputBox">
-                        <input type="text" name="" required="required">
-                        <span>Full Name</span>
+                        <input type="text" name="Name" placeholder="Your name">
+                        <span></span>
                     </div>
                     <div class="inputBox">
-                        <input type="text" required="required">
-                        <span>Email</span>
+                        <input type="text" name="Email" placeholder="Your Email">
+                        <span></span>
                     </div>
                     <div class="inputBox">
-                        <select name="options" required>
-                            <option value="" disabled selected>Please choose</option>
+                        <select name="options" >
+                            <option value="none" disabled selected>Please choose</option>
                             <option value="recruitment">Recruitment</option>
                             <option value="service">Product and Service</option>
                             <option value="corporate">Corporate</option>
@@ -89,8 +89,8 @@
                           </select>
                     </div>
                     <div class="inputBox">
-                        <textarea required="required"></textarea>
-                        <span>Your message</span>
+                        <textarea  name="UserMessage" placeholder="Your message"></textarea>
+                        <span></span>
                     </div>
                     <div class="inputBox">
                         <input type="submit" name="" value="Send">
@@ -140,5 +140,6 @@
         </footer>
     
         <script src="scripts/loader.js"></script>
+        <script src="scripts/validation.js"></script>
     </body>
     </html>
