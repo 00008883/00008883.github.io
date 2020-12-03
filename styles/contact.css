@@ -51,7 +51,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(135deg, rgba(5,0,104,1) 35%, rgba(0,255,226,1) 100%);
+    background: #261671;
 }
 .contact .content{
     min-width: 800px;

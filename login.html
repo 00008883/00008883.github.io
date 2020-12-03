@@ -45,10 +45,10 @@
             <div class="user signInBx">
                 <div class="imgBx"><img src="images/form2.png" alt=""></div>
                 <div class="formBx">
-                    <form>
+                    <form id="signIn" action="#" onsubmit="return Login()">
                         <h2>Sign In</h2>
-                        <input type="text" name="" placeholder="Username">
-                        <input type="password" name="" placeholder="Password">
+                        <input type="text" name="username" placeholder="Username">
+                        <input type="password" name="pswd" placeholder="Password">
                         <input type="submit" name="" value="Login">
                         <p class="signup">Don't have an account? <a href="#"  onclick="toggleForm();">Sign Up</a></p>
                     </form>
@@ -56,12 +56,12 @@
             </div>
             <div class="user signupBx">
                 <div class="formBx">
-                    <form>
+                    <form id="registration" action="#" onsubmit="return Registration()">
                         <h2>Registration</h2>
-                        <input type="text" name="" placeholder="Username">
-                        <input type="email" name="" placeholder="Your email">
-                        <input type="password" name="" placeholder="Password">
-                        <input type="password" name="" placeholder="Confirm Password">
+                        <input type="text" name="username" placeholder="Username">
+                        <input type="text" name="email" placeholder="Your email">
+                        <input type="password" name="pswd" placeholder="Password">
+                        <input type="password" name="pswdconfirm" placeholder="Confirm Password">
                         <input type="submit" name="" value="Sign Up">
                         <p class="signup">Already have an account? <a href="#" onclick="toggleForm();">Sign In</a></p>
                     </form>

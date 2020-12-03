@@ -1,6 +1,8 @@
 var acc = document.getElementsByClassName('accordion');
 var i;
 var len = acc.length;
+
+// While user will click in FAQ accordion will show the answer
 for(i=0; i < len; i++) {
     acc[i].addEventListener('click', function(){
         this.classList.toggle('active');
