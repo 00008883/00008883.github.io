@@ -50,6 +50,11 @@ function Registration(){
         alert("You should enter password. Please check it again");
         return false;
     } 
+    // Password should contain at least 1 uppercase, 1 lowercase, 1 digit and minimum 8 characters
+    if (!password.match(/[a-z]/g) || !password.match(/[A-Z]/g) || !password.match(/[0-9]/g) || !password.length >= 8) {
+        alert("Password should contain at least: 8 characters, 1 uppercase, 1 lowercase, 1 digit");
+        return false;
+        }
     // Will check two passwords 
     if (password != passwordConfirmation){
         alert("Passwords do not match. Check it again");
