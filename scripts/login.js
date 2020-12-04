@@ -58,5 +58,4 @@ function Registration(){
     else{
         return true;
     }
-    
 }

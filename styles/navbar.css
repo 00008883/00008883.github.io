@@ -71,7 +71,7 @@ nav .icon-burger .line{
 }
 
 /* Responsive for mobile devices */
-@media screen and (max-width:768px){
+@media screen and (max-width:900px){
     nav .logo img{
         width: 110px;
         height: 35px;
@@ -96,7 +96,7 @@ nav .icon-burger .line{
         height: auto;
         flex-direction: column;
         justify-content: space-evenly;
-        background-color: rgba(0,0,0,0.9);
+        background-color: rgba(0, 0, 0, 0.959);
         overflow: hidden;
         transition: all 0.5s ease-in-out;
     }
