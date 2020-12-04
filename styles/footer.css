@@ -32,6 +32,9 @@ main {
     font-size: 14px;
     margin-top: 20px;
 }
+.footer-left p{
+    color: #fff;
+}
 .footer-left img{
     width: 35%;
 }
